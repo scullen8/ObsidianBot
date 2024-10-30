@@ -56,6 +56,9 @@ def parse_time2(startTime, endTime):
 
 
 def load_google_data(googleDataPath):
+    """
+    there seems to be 3 different data structure types as time went on
+    """
 
     with open(googleDataPath,'r',) as f:
          mapData = json.load(f)
